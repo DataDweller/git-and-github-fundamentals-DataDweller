@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FBref Style Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+  <span>Sports Reference</span>
+  <a>Baseball</a>
+  <a>Football</a>
+  <a>Basketball</a>
+  <a>Hockey</a>
+  <a>Soccer</a>
+
+  <div class="top-right">
+    <button id="loginBtn">Login</button>
+  </div>
+</div>
+
+
+<header class="header">
+
+  <div class="logo">
+    <span class="ball">⚽</span>
+    <span class="brand">FBREF</span>
+  </div>
+
+  <div class="search">
+    <input placeholder="Enter Person, Team, Section, etc">
+    <button>Search</button>
+  </div>
+
+</header>
+
+
+<nav class="nav">
+  <a>Players</a>
+  <a>Clubs</a>
+  <a>Competitions</a>
+  <a>Matches</a>
+  <a>Awards</a>
+  <a>Countries</a>
+  <a>Stathead</a>
+</nav>
+
+
+
+<main class="layout">
+
+  <div class="panel">
+    <div class="panel-header">Football Players</div>
+
+    <div class="players">
+      <div class="player"></div>
+      <div class="player"></div>
+      <div class="player"></div>
+      <div class="player"></div>
+      <div class="player"></div>
+      <div class="player"></div>
+    </div>
+
+    <div class="search-small">
+      <input placeholder="Enter Player Name">
+      <button>Search</button>
+    </div>
+
+  </div>
+
+
+
+  <div class="panel">
+    <div class="panel-header">Football Squads</div>
+
+    <div class="clubs">
+      <div class="club">Arsenal</div>
+      <div class="club">PSV</div>
+      <div class="club">AZ</div>
+      <div class="club">Lorient</div>
+      <div class="club">Man United</div>
+      <div class="club">Paris FC</div>
+    </div>
+
+  </div>
+
+
+
+  <div class="panel">
+    <div class="panel-header">Stathead</div>
+
+    <p>The sports search engine for fans.</p>
+
+    <button class="trial">Start FREE trial</button>
+
+  </div>
+
+
+</main>
+
+
+
+<div class="modal hidden" id="authModal">
+
+  <div class="modal-card">
+
+    <span class="close" id="closeModal">×</span>
+
+    <div class="tabs">
+      <button class="tab active" data-target="loginForm">Sign In</button>
+      <button class="tab" data-target="registerForm">Register</button>
+    </div>
+
+
+    <form id="loginForm" class="form active">
+      <input placeholder="Email">
+      <input placeholder="Password" type="password">
+      <button>Sign In</button>
+    </form>
+
+
+    <form id="registerForm" class="form">
+      <input placeholder="Name">
+      <input placeholder="Email">
+      <input placeholder="Password" type="password">
+      <button>Create Account</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
